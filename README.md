@@ -153,9 +153,9 @@ df.head()
 ```
 
 --
-[Geospatial data in Python 2014]: https://www.youtube.com/watch?v=ctdjAir4TUg&list=PL16QizNnMFGd64BIRhbe6t86sgv4MvOdI
-[https://www.youtube.com/watch?v=1fzQKMp_tdE]: https://www.youtube.com/watch?v=1fzQKMp_tdE
-
+[SciPy2014 Geospatial Data Tutorial]: https://www.youtube.com/watch?v=ctdjAir4TUg&list=PL16QizNnMFGd64BIRhbe6t86sgv4MvOdI
+[SciPy2013 Geospatial Data Tutorial]: https://www.youtube.com/watch?v=1fzQKMp_tdE
+[University of Washington Video]: https://www.youtube.com/watch?v=ZgyT3tY4hoI 
 [GeoDjango]: https://docs.djangoproject.com/en/1.7/ref/contrib/gis/install/
 [Psycopg]: http://initd.org/psycopg/
 [PPyGIS]: http://www.fabianowski.eu/projects/ppygis/
