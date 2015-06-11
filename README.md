@@ -11,14 +11,20 @@ postgres uses PL/SQL: syntax will be very similar to SQL
 
 Schemas are much more important in Postgres; In SQL, the default schema is .dbo - this is not explicitly defined
 
-
-POSTgis extension - makes it a
+POSTgis extension - makes it a geospatially capable database.
 
 ##PostGIS:
 [University of Washington Video] is a quick 5-minute intro
 
 Uses Spatial SQL: SQL, but with geographic relationships:
 SELECT superhero.name FROM city,superhero WHERE ST_contains(city.geom, superhero.geom) AND city.name= 'Gotham';
+
+Other databases:
+Spatialite, SQLlite (with Geometry),  GeoPackage
+
+WGS84 - standard map coordinate system used for pretty much everything
+
+Libraries - Shapely, GDAL,
 
 CREATE DATABASE <dbname>;
 CREATE EXTENSION postgis;
@@ -38,18 +44,13 @@ myData <- dbGetQuiery(con, thisQuery)
 ```
 
 ## Python
-Map projections: 
+Good [zetcode tutorial] on getting started with psycopg to connect to a database from python and add or select data.
+
 Using OGR vector data through Python: Fiona
 Using Raster Data: Rasterio
 
-WGS84 - standard map coordinate system used for pretty much everything
-
-Libraries - Shapely, GDAL,
 Video from [SciPy2013 Geospatial Data Tutorial]: Does not go into database details
 Video from [ScyPy2014 Geospatial Data Tutorial]: the last of the three videos deals with databases
-
-Other databases:
-Spatialite, SQLlite (with Geometry),  GeoPackage
 
 sample:
 ```
@@ -153,6 +154,7 @@ df.head()
 ```
 
 --
+[zetcode tutorial]: http://zetcode.com/db/postgresqlpythontutorial/
 [SciPy2014 Geospatial Data Tutorial]: https://www.youtube.com/watch?v=ctdjAir4TUg&list=PL16QizNnMFGd64BIRhbe6t86sgv4MvOdI
 [SciPy2013 Geospatial Data Tutorial]: https://www.youtube.com/watch?v=1fzQKMp_tdE
 [University of Washington Video]: https://www.youtube.com/watch?v=ZgyT3tY4hoI 
